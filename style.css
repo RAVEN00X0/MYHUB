@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 4rem 2rem;   /* gave more padding for space */
+    background: url("cute-anime-girl-streaming-headphones-glasses-adorable.jpg") no-repeat center center/cover;
+    color: #ddddd;
+    position: relative;
+  }
+  
+  header::after {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* dark overlay for readability */
+  }
+  
+  header h1, 
+  header p {
+    position: relative;
+    z-index: 1; /* keep text above overlay */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .card {
+    background: #cccccc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #4e73df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .card a:hover {
+    background: #2e59d9;
+  }
+  
